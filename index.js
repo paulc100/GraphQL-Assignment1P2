@@ -8,16 +8,16 @@ import cloudinary from "cloudinary";
 const { ApolloServer } = aserver;
 
 const startServer = async () => {
-  await mongoose.connect("mongodb+srv://admin:P@ssw0rd@cluster0.8jve5.mongodb.net/dbLab5?retryWrites=true&w=majority", {
+  await mongoose.connect("mongodb+srv://xxxxxxxxxxx.mongodb.net/dbLab5?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true
   });
   mongoose.set('useFindAndModify', false);
 
   cloudinary.config({
-    cloud_name: "paulacit",
-    api_key: "957697833911882",
-    api_secret: "RZaIdkxwN4AG4fuMVF5djGYyGEc",
+    cloud_name: "xxxx",
+    api_key: "xxxxx",
+    api_secret: "xxxx",
   });
 
   const server = new ApolloServer({ typeDefs, resolvers });
