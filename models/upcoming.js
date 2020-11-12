@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-export const Note = mongoose.model("Note", { 
+export const Upcoming = mongoose.model("Upcoming", { 
     title: String, 
     description: String, 
     reminder: String
